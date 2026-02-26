@@ -115,56 +115,64 @@ export default {
       items: ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta'],
 
       titulosTreino: {
-        Segunda: 'Peito + Tríceps',
-        Terça: 'Costas + Bíceps',
-        Quarta: 'Quadríceps + Glúteo',
-        Quinta: 'Ombros + Abdômen',
-        Sexta: 'Posterior + Panturrilha'
+        Segunda: 'Peito + Ombros + Tríceps',
+        Terça: 'Unilateral + Cardio',
+        Quarta: 'Costas + Bíceps',
+        Quinta: 'Unilateral + Cardio',
+        Sexta: 'Leg Day'
       },
 
       treinos: {
         Segunda: [
-          { nome: 'Supino Inclinado', repeticoes: '4x8', carga: '20kg', video: 'https://www.youtube.com/shorts/KK5ZSj22h7s', concluido: false },
-          { nome: 'Crucifixo Máquina', repeticoes: '3x12', carga: '20kg', video: 'https://www.youtube.com/shorts/MENdoLpyj7c', concluido: false },
-          { nome: 'Tríceps Corda', repeticoes: '3x10', carga: '15kg', video: 'https://www.youtube.com/shorts/-QGC1cL6ETE', concluido: false },
-          { nome: 'Tríceps Testa', repeticoes: '3x10', carga: '15kg', video: 'https://www.youtube.com/shorts/etTuALjH3bo', concluido: false },
-          { nome: 'Tríceps Francês', repeticoes: '3x10', carga: '15kg', video: 'https://www.youtube.com/shorts/dMYGgTbtRIQ', concluido: false },
+          { nome: 'Supino Inclinado', repeticoes: '4x8', carga: '20kg', video: '', concluido: false },
+          { nome: 'Crucifixo Máquina', repeticoes: '3x12', carga: '20kg', video: '', concluido: false },
+          { nome: 'Elevação Lateral Halter', repeticoes: '3x12', carga: '14kg', video: '', concluido: false },
+          { nome: 'Elevação Frontal Halter', repeticoes: '3x12', carga: '14kg', video: '', concluido: false },
+          { nome: 'Crucifixo inverso em pé', repeticoes: '3x12', carga: '14kg', video: '', concluido: false },
+          { nome: 'Tríceps Corda', repeticoes: '3x10', carga: '15kg', video: '', concluido: false },
+          { nome: 'Tríceps Testa', repeticoes: '3x10', carga: '15kg', video: '', concluido: false },
+          { nome: 'Tríceps Francês', repeticoes: '3x10', carga: '15kg', video: '', concluido: false },
           { nome: 'Abdominal', repeticoes: '60x', carga: '-', video: '', concluido: false },
-          { nome: 'Esteira', repeticoes: '-', carga: '10min', video: '', concluido: false }
         ],
         Terça: [
+          { nome: 'Afundo', repeticoes: '3x12', carga: '5kg', video: '', concluido: false },
+          { nome: 'Avanço', repeticoes: '3x12', carga: '5kg', video: '', concluido: false },
+          { nome: 'Agachamento Livre', repeticoes: '3x12', carga: '', video: '', concluido: false },
+          { nome: 'Prancha (Toque no Ombro)', repeticoes: '60s', carga: '', video: '', concluido: false },
+          { nome: 'Prancha (Abdominal)', repeticoes: '3x12', carga: '', video: '', concluido: false },
+          { nome: 'Prancha (Parada)', repeticoes: '60s', carga: '', video: '', concluido: false },
+          { nome: 'Abdominal', repeticoes: '60x', carga: '-', video: '', concluido: false },
+          { nome: 'Cardio (Bicicleta + Esteira)', repeticoes: '', carga: '', video: '', concluido: false },
+        ],
+        Quarta: [
           { nome: 'Serrote', repeticoes: '4x8', carga: '30kg', video: '', concluido: false },
           { nome: 'Pulldown (Polia)', repeticoes: '3x12', carga: '25kg', video: '', concluido: false },
           { nome: 'Crucifixo Inverso Máquina', repeticoes: '3x12', carga: '15kg', video: '', concluido: false },
           { nome: 'Bi-Set - Puxada Alta e Baixa', repeticoes: '3x8', carga: '25kg', video: '', concluido: false },
           { nome: 'Rosca Martelo Alternada', repeticoes: '3x12', carga: '5kg', video: '', concluido: false },
           { nome: 'Abdominal', repeticoes: '60x', carga: '-', video: '', concluido: false },
-          { nome: 'Bicicleta', repeticoes: '-', carga: '10min', video: '', concluido: false }
         ],
-        Quarta: [
+        Quinta: [
+          { nome: 'Afundo', repeticoes: '3x12', carga: '5kg', video: '', concluido: false },
+          { nome: 'Avanço', repeticoes: '3x12', carga: '5kg', video: '', concluido: false },
+          { nome: 'Agachamento Livre', repeticoes: '3x12', carga: '', video: '', concluido: false },
+          { nome: 'Prancha (Toque no Omrbo)', repeticoes: '60s', carga: '', video: '', concluido: false },
+          { nome: 'Prancha (Abdominal)', repeticoes: '3x12', carga: '', video: '', concluido: false },
+          { nome: 'Prancha (Parada)', repeticoes: '60s', carga: '', video: '', concluido: false },
+          { nome: 'Abdominal', repeticoes: '60x', carga: '-', video: '', concluido: false },
+          { nome: 'Cardio (Bicicleta + Esteira)', repeticoes: '', carga: '', video: '', concluido: false },
+        ],
+        Sexta: [
           { nome: 'Agachamento Livre', repeticoes: '4x8', carga: '10kg', video: '', concluido: false },
           { nome: 'Leg Press', repeticoes: '4x8', carga: '25kg', video: '', concluido: false },
           { nome: 'Cadeira Extensora', repeticoes: '4x12', carga: '25kg', video: '', concluido: false },
-          { nome: 'Cadeira Abdutora', repeticoes: '4x12', carga: '30kg', video: '', concluido: false },
-          { nome: 'Abdominal', repeticoes: '60x', carga: '-', video: '', concluido: false },
-          { nome: 'Esteira', repeticoes: '-', carga: '10min', video: '', concluido: false }
-        ],
-        Quinta: [
-          { nome: 'Desenvolvimento Barra', repeticoes: '4x8', carga: '10kg', video: '', concluido: false },
-          { nome: 'Elevação Lateral Halter', repeticoes: '3x12', carga: '14kg', video: '', concluido: false },
-          { nome: 'Elevação Frontal Halter', repeticoes: '3x12', carga: '14kg', video: '', concluido: false },
-          { nome: 'Crucifixo inverso em pé', repeticoes: '3x12', carga: '14kg', video: '', concluido: false },
-          { nome: 'Abdominal', repeticoes: '60x', carga: '-', video: '', concluido: false },
-          { nome: 'Bicicleta', repeticoes: '-', carga: '10min', video: '', concluido: false }
-        ],
-        Sexta: [
           { nome: 'Stiff Barra', repeticoes: '4x8', carga: '10kg', video: '', concluido: false },
           { nome: 'Mesa Flexora', repeticoes: '4x12', carga: '25kg', video: '', concluido: false },
-          { nome: 'Panturrilha em Pé', repeticoes: '4x12', carga: '-', video: '', concluido: false },
+          { nome: 'Cadeira Abdutora', repeticoes: '4x12', carga: '30kg', video: '', concluido: false },
+          { nome: 'Cadeira Adutora', repeticoes: '4x12', carga: '30kg', video: '', concluido: false },
           { nome: 'Panturrilha Sentado', repeticoes: '4x20', carga: '15kg', video: '', concluido: false },
           { nome: 'Abdominal', repeticoes: '60x', carga: '-', video: '', concluido: false },
-          { nome: 'Esteira', repeticoes: '-', carga: '10min', video: '', concluido: false }
-        ]
+        ],
       },
 
       storageKey: '',
